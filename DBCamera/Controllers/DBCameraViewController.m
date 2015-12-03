@@ -63,7 +63,7 @@
 
     if ( self ) {
         _processingPhoto = NO;
-        _deviceOrientation = UIDeviceOrientationPortrait;
+        _deviceOrientation = [[UIApplication sharedApplication] statusBarOrientation];
         if ( delegate )
             _delegate = delegate;
 
